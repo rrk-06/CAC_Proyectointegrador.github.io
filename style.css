@@ -40,6 +40,7 @@ ol,ul{
 }
 .navbar {
     height: 100%;
+    width: min(1200px, 100%);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -66,7 +67,7 @@ ol,ul{
 }
 .ul_links {
     width: 100%;
-    background-color: #5a0bfa;
+    background-color: #292929;
     position: absolute;
     top: var(--altura_header);
     left: 0;
@@ -85,6 +86,31 @@ ol,ul{
     font-weight: bold;
 
 }
+
+@media (min-width:768px){
+    .labe_hamburguesa{
+        display: none;
+    }
+    .ul_links{
+        position: static;
+        width: auto;
+        height: auto;
+        flex-direction: row;
+        gap: 2rem;
+    }
+    .link{
+        font-size: 1.2rem;
+        transition: all;
+        padding: .2rem .7rem;
+
+    }
+    .link:hover{
+        background-color: #5a0bfa;
+        border-radius: 20px;
+        
+    }
+}
+
 .btn-1 {
 }
 .header-content {
