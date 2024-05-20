@@ -1,12 +1,12 @@
-const url = 'https://api.rawg.io/api/games?key=a4894ec5ef784cf1af00bd82b9fd0dd1&dates=2004-09-01,2004-09-30&ordering=rating';
+const url = 'https://api.rawg.io/api/games?key=a4894ec5ef784cf1af00bd82b9fd0dd1&dates=2022-01-01,2024-01-30&platforms=7&ordering=-rating';
 
 function gameCard(game) {
     const { name , background_image } = game;
     console.log(`Game Name: ${name}`);
     console.log(`Game image: ${background_image}`);
 
-    const gameContainer = document.querySelector(".games1-container");
-    const gamename = document.createElement("h3");
+    const gameContainer = document.querySelector(".games-container");
+    const gamename = document.createElement("h2");
     gamename.textContent = name;
 
     const game_backgroundimage = document.createElement("img");
@@ -15,8 +15,9 @@ function gameCard(game) {
     const card = document.createElement("div");
     card.classList.add("game-card");
 
-    card.appendChild(gamename);
+    
     card.appendChild(game_backgroundimage);
+    card.appendChild(gamename);
   
         gameContainer.appendChild(card);
     // Implementa la lógica para crear una tarjeta de juego
