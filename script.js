@@ -1,4 +1,4 @@
-const url = 'https://api.rawg.io/api/games?key=a4894ec5ef784cf1af00bd82b9fd0dd1&dates=2022-01-01,2024-01-30&platforms=7&ordering=-rating';
+const url = 'https://api.rawg.io/api/games?key=a4894ec5ef784cf1af00bd82b9fd0dd1&dates=2022-08-01,2023-12-30&genres=5&platforms=7&ordering=-rating';
 
 function gameCard(game) {
     const { name , background_image } = game;
@@ -29,7 +29,7 @@ async function traerApi() {
     try {
         const response = await fetch(url);
         const data = await response.json(); // Convertir la respuesta a JSON
-        const results = data.results; // Asegúrate de acceder a la propiedad correcta
+        const results = data.results.slice(0, 9); // Asegúrate de acceder a la propiedad correcta
 
         for (const result of results) {
             const gameResponse = await fetch(`https://api.rawg.io/api/games/${result.id}?key=a4894ec5ef784cf1af00bd82b9fd0dd1`);
