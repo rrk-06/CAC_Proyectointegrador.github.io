@@ -7,7 +7,7 @@
     <title>GG Plays</title>
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/detalle.css">
+    <link rel="stylesheet" href="../css/login.css">
 </head>
 
 <body>
@@ -28,7 +28,6 @@
             <ul class="ul_links">
 
                 <li class="li_links"> <a class="link" href="../index.html">INICIO</a></li>
-
                 <li class="li_links"> <a class="link" href="#">ACERCA DE</a></li>
                 <li class="li_links"> <a class="link" href="../pages/registrarse.html">REGISTRO</a></li>
                 <div class="bglogin">
@@ -42,17 +41,24 @@
     <div class="background-image-container">
         <img class="bgimg" src="../assets/img/bg.jpg">
     </div>
-    <div class="subtitulo">
-        <h1>Reseñas de videojuegos</h1>
-        <img src="./assets/img/joy2.png" >
-                       
-                    
-    </div>
-   <main>
-    <div class="games-container">
-
-    </div>
-   </main>
+    <main>
+        <div>
+            <form id="loginForm" action="" method="post">
+                <h1>Iniciar Sesion</h1>
+                <div>
+                    <input type="email" class="ingreso" id="email" name="email" placeholder="Correo Electrónico">
+                    <div id="emailError" class="error-message"></div>
+                </div>
+                <div>
+                    <input type="password" class="ingreso" id="password" name="password" placeholder="Inicio Sesion">
+                    <div id="passwordError" class="error-message"></div>
+                </div>
+                <input type="submit" class="boton">
+            </form>
+        </div>
+        <script src="../js/login.js"></script>
+    </main>
+    <hr>
 
     <footer class="footer-container">
         <ul>
@@ -63,5 +69,5 @@
     </footer>
 
 </body>
-<script src="../js/script.js"></script>
+
 </html>

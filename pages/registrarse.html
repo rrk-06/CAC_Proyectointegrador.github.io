@@ -7,7 +7,7 @@
     <title>GG Plays</title>
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/detalle.css">
+    <link rel="stylesheet" href="../css/registro.css">
 </head>
 
 <body>
@@ -28,7 +28,6 @@
             <ul class="ul_links">
 
                 <li class="li_links"> <a class="link" href="../index.html">INICIO</a></li>
-
                 <li class="li_links"> <a class="link" href="#">ACERCA DE</a></li>
                 <li class="li_links"> <a class="link" href="../pages/registrarse.html">REGISTRO</a></li>
                 <div class="bglogin">
@@ -42,17 +41,47 @@
     <div class="background-image-container">
         <img class="bgimg" src="../assets/img/bg.jpg">
     </div>
-    <div class="subtitulo">
-        <h1>Reseñas de videojuegos</h1>
-        <img src="./assets/img/joy2.png" >
-                       
-                    
-    </div>
-   <main>
-    <div class="games-container">
+    
+    <div class="registro form">
+        <h3>Registrarse</h3>
+        <form class="registro" action="" method="post">
+            <div>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+            </div>
+            <!-- <label for="nombre">Ingrese Nombre</label> -->
+            <div>
+                <input type="text" name="apellido" id="apellido" placeholder="Apellido" required>
+            </div>
+            <div>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+            </div>
+            <div>
+                <input type="password" name="password" id="password" placeholder="Contraseña" required>
+            </div>
+            <div>
+                <label for="nacimiento">Fecha de Nacimiento</label>
+                <input type="date" name="nacimiento" id="nacimiento" required>
+            </div>
+            <div>
+                <select name="pais" id="pais">
+                    <option value="1">Pais</option>
+                    <option value="2">Argentina</option>
+                    <option value="3">Peru</option>
+                    <option value="4">Mexico</option>
+                    <option value="5">Chile</option>
+                </select>
+            </div>
+            <div>
+                <label for="termino">Acepto Terminos y Condiciones</label>
+                <input type="checkbox" name="termino" id="termino">
+            </div>
+            <div>
+                <input type="reset" value="Limpiar Campos">
+                <input type="submit" value="Registrarse">
+            </div>
 
+        </form>
     </div>
-   </main>
 
     <footer class="footer-container">
         <ul>
@@ -63,5 +92,5 @@
     </footer>
 
 </body>
-<script src="../js/script.js"></script>
+
 </html>

@@ -1,0 +1,125 @@
+
+
+
+.background-image-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+
+.bgimg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+form {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    max-width: 400px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+.ingreso, form input[type="text"], form input[type="email"], form input[type="password"], form input[type="date"], form select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form input[type="checkbox"] {
+    width: auto;
+    margin-left: 10px;
+}
+
+form label {
+    margin-left: 5px;
+}
+
+.boton, form input[type="submit"], form input[type="reset"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.boton:hover, form input[type="submit"]:hover, form input[type="reset"]:hover {
+    background-color: #45a049;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    height: 1em;
+}
+
+/* Estilo del footer */
+footer.footer-container {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    flex-shrink: 0;
+}
+
+footer.footer-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer.footer-container ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+footer.footer-container ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer.footer-container ul li a:hover {
+    text-decoration: underline;
+}
+
+
+form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
